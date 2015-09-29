@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+       <include 
+    layout="@layout/ios_status_bar"
+  
+    /> 
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/map_padding_bottom"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="凭证"
+        android:textSize="@dimen/text_size_rightbar"
+        
+        />
+    <ImageView 
+        android:id="@+id/passbook_add"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/passbook_add"/>
+    
+</RelativeLayout>
+<com.larphoid.overscrollinglistview.OverScrollView
+    android:id="@+id/overScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/passbook_backgound"
+    android:orientation="vertical"
+    
+    >
+<ImageView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scaleType="fitXY"
+    android:src="@drawable/passbook_content"
+    />
+<ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleType="fitXY"
+    android:src="@drawable/passbook_search"
+    android:layout_gravity="center"
+    android:id="@+id/passbook_search"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    />
+
+
+</LinearLayout>
+</com.larphoid.overscrollinglistview.OverScrollView>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_bottom_background"
+    android:orientation="horizontal"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+  >
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/app_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/gridview_selector"
+        android:drawableTop="@drawable/app_phone"
+        android:gravity="center"
+        android:text="@string/app_phone"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <TextView
+                android:layout_gravity="center"
+        
+        android:id="@+id/app_mail"
+           android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/gridview_selector"
+        android:drawableTop="@drawable/app_mail"
+        android:gravity="center"
+        android:text="@string/app_mail"
+        android:textColor="#ffffff" />
+
+    <TextView
+                android:layout_gravity="center"
+           android:textSize="12sp"
+        android:id="@+id/app_safari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/gridview_selector"
+        android:drawableTop="@drawable/app_safari"
+        android:gravity="center"
+        android:text="@string/app_safari"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/app_music"
+                android:layout_gravity="center"
+          android:textSize="12sp" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/gridview_selector"
+        android:drawableTop="@drawable/app_music"
+        android:gravity="center"
+        android:text="@string/app_Music"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

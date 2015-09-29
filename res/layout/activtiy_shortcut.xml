@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/shortcut_head"
+        android:id="@+id/shortcut_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="手机"
+                        android:textColor="#d1bed3"
+            android:id="@+id/shortcut_phone"
+            android:textSize="@dimen/text_size_rightbar"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="耳机"
+            android:padding="5dp" 
+            android:textColor="#d1bed3"
+            android:id="@+id/shortcut_wear"
+            android:textSize="@dimen/text_size_rightbar" />
+    </LinearLayout>
+    <com.larphoid.overscrollinglistview.OverScrollView
+    android:id="@+id/overScrollView1"
+    android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    
+<ImageView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/shortcut_bottom"
+    android:scaleType="fitXY"
+    />
+
+
+</com.larphoid.overscrollinglistview.OverScrollView>
+
+</LinearLayout>
+

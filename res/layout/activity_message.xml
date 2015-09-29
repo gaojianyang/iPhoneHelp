@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:orientation="vertical"
+    tools:context="com.xiri.appactivity.MessageActivity" >
+    <include 
+    layout="@layout/ios_status_bar_black"
+  
+    /> 
+<include 
+    layout="@layout/ios_navigationbar"
+  
+    /> 
+   
+     
+ <com.xiri.thrid.SwipeListView
+            xmlns:swipe="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/example_lv_list"
+            android:listSelector="#00000000"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            swipe:swipeFrontView="@+id/front"
+            swipe:swipeBackView="@+id/back"
+            swipe:swipeActionLeft="reveal"
+            swipe:swipeMode="left"
+             swipe:swipeDrawableChecked="@drawable/choice_selected"
+            swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+            swipe:swipeCloseAllItemsWhenMoveList="true"
+            swipe:swipeOpenOnLongPress="false"
+            swipe:swipeOffsetRight="50dp"
+            />
+ 
+</LinearLayout>
+

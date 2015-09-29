@@ -1,0 +1,366 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xiri.nextactivity.CalendarRiliActivity" >
+<include 
+    layout="@layout/ios_status_bar_black"
+  
+    /> 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/map_padding_bottom"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/map_padding_bottom" >
+
+        <TextView
+            android:id="@+id/calendarnext_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="编辑"
+            android:textColor="#ff3b30"
+            android:textSize="@dimen/text_size_rightbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="日历	"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_rightbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="完成"
+            android:textColor="#ff3b30"
+                        android:id="@+id/calendarnext_end"
+            
+            android:textSize="@dimen/text_size_rightbar" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/separator" />
+
+    <com.larphoid.overscrollinglistview.OverScrollView
+        android:id="@+id/overScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:background="#efeff4"
+        
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ios_tv_shape"
+                android:gravity="center"
+                android:text="隐藏所有日历"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_rightbar" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/calendar_padding_bottom"
+                android:layout_marginLeft="@dimen/calendar_padding_bottom"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:text="ICLOUD"
+                android:textColor="#6d6c72" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ios_tv_shape"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_top_margin"
+                    android:src="@drawable/selected" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="iCloud"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_rightbar" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_top_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ios_tv_shape"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_top_margin"
+                    android:src="@drawable/selected" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/bluedot" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="家庭"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_rightbar" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/detail_red" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_top_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ios_tv_shape"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_top_margin"
+                    android:src="@drawable/selected" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/purpledot" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="工作"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_rightbar" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/detail_red" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/calendar_padding_bottom"
+                android:layout_marginLeft="@dimen/calendar_padding_bottom"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:text="其他"
+                android:textColor="#6d6c72" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+ <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ios_tv_shape"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_top_margin"
+                    android:src="@drawable/selected" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/purpledot" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="中国节假日"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_rightbar" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/detail_red" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_top_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ios_tv_shape"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_top_margin"
+                    android:src="@drawable/selected" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/cake_red" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="生日"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_rightbar" />
+            </LinearLayout>
+</LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ios_tv_shape"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="显示已拒绝的事件"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_rightbar" />
+
+                <!-- <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sb_use_listener"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:offColor="#34a5a5a5"
+                    app:onColor="#4cd864" /> -->
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+        </LinearLayout>
+    </com.larphoid.overscrollinglistview.OverScrollView>
+
+</LinearLayout>
+<!--  -->
+
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ios_status_bar_black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/map_padding_bottom"
+        android:paddingTop="@dimen/map_padding_bottom"
+        android:text="设置"
+        android:textSize="@dimen/text_size_month" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/separator" />
+
+    <com.larphoid.overscrollinglistview.OverScrollView
+        android:id="@+id/overScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efeff4" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/activity_set_one" />
+
+            <include layout="@layout/activity_set_two" />
+
+            <include layout="@layout/activity_set_third" />
+
+            <include layout="@layout/activity_set_four" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <ImageView
+                android:id="@+id/set_imgpart1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <ImageView
+                android:id="@+id/set_imgpart2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <ImageView
+                android:id="@+id/set_imgpart3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <ImageView
+                android:id="@+id/set_imgpart4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_top_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+        </LinearLayout>
+    </com.larphoid.overscrollinglistview.OverScrollView>
+
+</LinearLayout>

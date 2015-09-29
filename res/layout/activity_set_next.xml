@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <include 
+    layout="@layout/ios_status_bar_black"
+    /> 
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    >
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/set_back"
+        android:padding="@dimen/map_padding_bottom"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/set_next_back"
+        />
+     <TextView android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="设置"
+      android:textSize="@dimen/text_size_month"
+      android:gravity="center"
+      android:paddingTop="@dimen/map_padding_bottom"
+      android:paddingBottom="@dimen/map_padding_bottom"
+      android:layout_centerInParent="true"
+    android:id="@+id/set_next_title"
+      />
+    
+</RelativeLayout>
+ <ImageView 
+      android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:scaleType="fitXY"
+     android:src="@drawable/separator"/>
+    <com.larphoid.overscrollinglistview.OverScrollView
+        android:id="@+id/overScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7eff7" >
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         >
+     <ImageView 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:scaleType="fitXY"
+         android:id="@+id/set_next_content"
+       
+         />
+     <ImageView 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:scaleType="fitXY"
+         android:id="@+id/set_next_content2"
+       
+         /></LinearLayout>
+    </com.larphoid.overscrollinglistview.OverScrollView>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#000000"
+    tools:context="com.xiri.appactivity.ShareActivity" >
+  <include 
+    layout="@layout/ios_status_bar"
+    /> 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/share_top" />
+    
+        <android.support.v4.view.ViewPager
+        android:id="@+id/share_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"/>
+     
+      
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/calendar_padding_bottom"
+        android:paddingTop="@dimen/calendar_padding_bottom" 
+        android:background="@drawable/share_bottom_background">
+
+        <ImageView
+            android:id="@+id/share_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/calendar_padding_bottom"
+            android:src="@drawable/share_bottom_right" />
+
+
+        <ImageView
+            android:id="@+id/share_yahoo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/calendar_padding_bottom"
+            android:gravity="center"
+        android:src="@drawable/share_bottom_yahoo" />
+    </RelativeLayout>
+
+</LinearLayout>

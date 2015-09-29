@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+            android:background="#ccffffff"
+    android:orientation="vertical" >
+<include 
+    layout="@layout/ios_status_bar_black"
+  
+    /> 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/map_padding_bottom"
+        android:paddingTop="@dimen/calendar_padding_bottom" >
+
+        <ImageView
+            android:id="@+id/appstore_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/calendar_padding_bottom"
+            android:src="@drawable/appstore_menu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="精品推荐"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_month" />
+
+        <TextView
+            android:id="@+id/appstore_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/calendar_padding_bottom"
+            android:gravity="center"
+            android:text="类别"
+            android:textColor="#0379fc"
+            android:textSize="@dimen/text_size_rightbar" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/separator" />
+
+    <com.larphoid.overscrollinglistview.OverScrollView
+        android:id="@+id/overScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/app_head1" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="@dimen/map_padding_bottom"
+                    android:text="优秀新App"
+                    android:textSize="@dimen/text_size_rightbar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/map_padding_bottom"
+                    android:text="显示全部>"
+                    android:textColor="#737373"
+                    android:textSize="@dimen/camera_size_left" />
+            </RelativeLayout>
+
+            <com.xiri.thrid.HorizontalListView
+                android:id="@+id/horizontalListView1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+            </com.xiri.thrid.HorizontalListView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:id="@+id/appstore_bottom1"
+                />
+             <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:id="@+id/appstore_bottom2"
+                /> <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:id="@+id/appstore_bottom3"
+                /> <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:id="@+id/appstore_bottom4"
+                />
+        </LinearLayout>
+    </com.larphoid.overscrollinglistview.OverScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/separator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ccffffff"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/map_padding_bottom" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/app_bottom_feature_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/featured_pressed" />
+
+            <TextView
+                android:id="@+id/app_bottom_feature_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_iv_margin"
+                android:gravity="center"
+                android:text="精品推荐"
+                android:textColor="#0379fc"
+                android:textSize="@dimen/text_size_day_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/app_bottom_favorite_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/favorites_unpressed" />
+
+            <TextView
+                android:id="@+id/app_bottom_favorite_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_iv_margin"
+                android:gravity="center"
+                android:text="排行榜"
+                android:textColor="#979797"
+                android:textSize="@dimen/text_size_day_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/app_bottom_safari_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/safari_compass_unpressed" />
+
+            <TextView
+                android:id="@+id/app_bottom_safari_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_iv_margin"
+                android:gravity="center"
+                android:text="探索"
+                android:textColor="#979797"
+                android:textSize="@dimen/text_size_day_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/app_bottom_search_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/search_unpressed" />
+
+            <TextView
+                android:id="@+id/app_bottom_search_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_iv_margin"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="#979797"
+                android:textSize="@dimen/text_size_day_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/app_bottom_update_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/update_unpressed" />
+
+            <TextView
+                android:id="@+id/app_bottom_update_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_iv_margin"
+                android:gravity="center"
+                android:text="更新"
+                android:textColor="#979797"
+                android:textSize="@dimen/text_size_day_name" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

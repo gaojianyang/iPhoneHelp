@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xiri.appactivity.CalenderActivity" >
+
+    <include layout="@layout/ios_status_bar_black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/map_padding_bottom"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/map_padding_bottom" >
+
+        <ImageView
+            android:id="@+id/calendar_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/add_red" />
+
+        <ImageView
+            android:id="@+id/calendar_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_toLeftOf="@+id/calendar_add"
+            android:src="@drawable/search_red" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/separator" />
+
+    <com.larphoid.overscrollinglistview.OverScrollView
+        android:id="@+id/overScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:id="@+id/calendar_content1"
+    />
+  <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:id="@+id/calendar_content2"
+    />  <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:id="@+id/calendar_content3"
+    />
+
+</LinearLayout>
+    </com.larphoid.overscrollinglistview.OverScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/separator" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/map_padding_bottom"
+        android:paddingTop="@dimen/map_padding_bottom" >
+
+        <TextView
+            android:id="@+id/calendar_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/calendar_padding_bottom"
+            android:gravity="center"
+            android:text="今天"
+            android:textColor="#ff473c"
+            android:textSize="@dimen/text_size_day" />
+
+        <TextView
+            android:id="@+id/calendar_rili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="日历"
+            android:textColor="#ff473c"
+            android:textSize="@dimen/text_size_day" />
+
+        <TextView
+            android:id="@+id/calendar_recieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/calendar_padding_bottom"
+            android:gravity="center"
+            android:text="收件箱"
+            android:textColor="#ff473c"
+            android:textSize="@dimen/text_size_day" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/calendar_padding_bottom"
+        android:paddingBottom="@dimen/calendar_padding_bottom"
+        >
+        
+           
+         <TextView 
+             android:id="@+id/tv_niandu"
+            android:text="年度"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_centerHorizontal="true"   
+android:textStyle="bold"         />
+          <ImageView 
+            android:id="@+id/photo_search_iv"
+           android:src="@drawable/search_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+android:layout_marginRight="@dimen/calendar_padding_bottom"  
+       />
+         <!--   <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#cf979797"
+android:layout_below="@+id/tv_niandu"   
+android:layout_marginTop="10dp"     
+   /> -->
+    </RelativeLayout>
+ <ImageView android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:scaleType="fitXY"
+     android:src="@drawable/separator"/>
+
+    <com.larphoid.overscrollinglistview.OverScrollView
+        android:id="@+id/overScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        >
+          
+        <ImageView 
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/photo_one_center"
+            android:scaleType="fitXY"
+            android:id="@+id/photo_one_center"
+            />
+    </com.larphoid.overscrollinglistview.OverScrollView>
+
+</LinearLayout>

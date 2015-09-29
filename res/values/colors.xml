@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="normal_day">#ff999999</color>
+    <color name="selected_day_background">#E75F49</color>
+    <color name="selected_day_text">#fff2f2f2</color>
+    <color name="selected_calendar_text">#FF3B30</color>
+     <color name="unselected_calendar_text">#979797</color>
+      <color name="selected_photo_text">#037aff</color>
+         <color name="unselected_camera_text">#ffffff</color>
+             <color name="selected_camera_text">#e3bf2e</color>
+                   <color name="selected_music_text">#ff2d55</color>
+             
+</resources>

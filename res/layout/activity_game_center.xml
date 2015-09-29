@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:orientation="vertical"
+    tools:context="com.xiri.appactivity.GameCenterActivity" >
+<include 
+    layout="@layout/ios_status_bar_black"
+  
+    /> 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="我"
+        android:textSize="@dimen/text_size_month" 
+        android:padding="@dimen/map_padding_bottom"/>
+   
+      
+      
+      
+      <ImageView 
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:scaleType="fitXY"
+          android:src="@drawable/gamecenter_me"
+          android:layout_weight="1"
+          android:id="@+id/game_content"
+          
+          />
+      <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+      android:background="#56f8f8f8"
+    android:paddingTop="@dimen/map_padding_bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/game_bottom_mea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/contacts_pressed" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_iv_margin"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="#5a55d3"
+            android:textSize="@dimen/text_size_day_name" />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/game_bottom_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/friends" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_iv_margin"
+            android:gravity="center"
+            android:text="朋友"
+            android:textColor="#979797"
+            android:textSize="@dimen/text_size_day_name" />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/game_bottom_games"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/games" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_iv_margin"
+            android:gravity="center"
+            android:text="游戏"
+            android:textColor="#979797"
+            android:textSize="@dimen/text_size_day_name" />
+    </LinearLayout>
+
+    <LinearLayout
+         android:gravity="center"
+          android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <ImageView 
+        android:id="@+id/game_bottom_challenges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/challenges"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="挑战"
+        android:textSize="@dimen/text_size_day_name"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/tv_iv_margin"
+        android:textColor="#979797"
+        />
+    
+
+</LinearLayout>
+    <LinearLayout 
+         android:gravity="center"
+          android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <ImageView 
+        android:id="@+id/game_bottom_turns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/turns"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回合"
+        android:textSize="@dimen/text_size_day_name"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/tv_iv_margin"
+        android:textColor="#979797"
+        />
+    
+
+</LinearLayout>
+   </LinearLayout>
+</LinearLayout>

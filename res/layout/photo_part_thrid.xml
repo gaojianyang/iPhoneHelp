@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/calendar_padding_bottom"
+                android:paddingBottom="@dimen/map_padding_bottom"
+        
+        
+        >
+        
+        <ImageView 
+            android:src="@drawable/add_blue"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:id="@+id/photo_add_iv"
+android:layout_marginLeft="@dimen/calendar_padding_bottom"  
+android:layout_alignParentLeft="true" />
+        
+         <TextView 
+            android:text="相簿"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_centerHorizontal="true"            />
+          <ImageView 
+            android:id="@+id/photo_search_iv"
+           android:src="@drawable/search_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_toLeftOf="@+id/photo_edit_tv"     
+android:layout_marginRight="@dimen/calendar_padding_bottom"  
+       />
+           <TextView 
+            android:id="@+id/photo_edit_tv"
+            android:text="编辑"
+            android:textSize="@dimen/text_size_rightbar"
+            android:textColor="#0379fc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+android:gravity="center"     
+android:layout_marginRight="@dimen/calendar_padding_bottom"  
+       />
+    </RelativeLayout>
+   <ImageView android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:scaleType="fitXY"
+     android:src="@drawable/separator"/> 
+
+     <com.larphoid.overscrollinglistview.OverscrollListView
+         android:id="@+id/overscrollListView1"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1" >
+     </com.larphoid.overscrollinglistview.OverscrollListView>
+
+</LinearLayout>

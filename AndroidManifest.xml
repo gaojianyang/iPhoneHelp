@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.iphonereborn"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 读写SD卡权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 网络访问权限 -->
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.GET_TASKS" />
+<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> 
+   
+
+    <application
+        android:name="com.xiri.application.LocalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/deskicon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.xiri.iphonehelper.MainActivity"
+            android:label="@string/app_name" >
+         
+        </activity>
+         <activity android:name="com.xiri.iphonehelper.ConductActivity" >
+               
+        </activity>
+         <activity android:name="com.xiri.iphonehelper.SignInActivity" >
+               
+        </activity>
+        <activity
+            android:name="com.xiri.iphonehelper.StartApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+         
+        </activity>
+        <activity
+            android:name="com.xiri.appactivity.MessageActivity"
+            android:label="@string/title_activity_message" >
+        </activity>
+        <activity
+            android:name="com.xiri.appactivity.PhotoActivity"
+            android:label="@string/title_activity_photo" >
+        </activity>
+        <activity
+            android:name="com.xiri.appactivity.CalenderActivity"
+            android:label="@string/title_activity_calender" >
+        </activity>
+        <activity
+            android:name="com.xiri.appactivity.CameraActivity"
+            android:label="@string/title_activity_camera" >
+        </activity>
+        <activity
+            android:name="com.xiri.appactivity.WeatherActivity"
+            android:label="@string/title_activity_weather" >
+        </activity>
+        <activity
+            android:name="com.xiri.appactivity.TimeActivity"
+            android:label="@string/title_activity_time" >
+        </activity>
+        <activity
+            android:name="com.xiri.appactivity.MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name="com.xiri.appactivity.VideoActivity"
+            android:label="@string/title_activity_video" >
+        </activity>
+        <activity
+            android:name="com.xiri.appactivity.NoteActivity"
+            android:label="@string/title_activity_note" >
+        </activity>
+        <activity
+            android:name="com.xiri.appactivity.ShareActivity"
+            android:label="@string/title_activity_share" >
+        </activity>
+        <activity
+            android:name="com.xiri.appactivity.GameCenterActivity"
+            android:label="@string/title_activity_game_center" >
+        </activity>
+        <activity
+            android:name="com.xiri.nextactivity.CalendarRiliActivity"
+            android:label="@string/title_activity_calendar_rili" >
+        </activity>
+        <activity android:name="com.xiri.appactivity.RemindActivity" >
+        </activity>
+        <activity android:name="com.xiri.appactivity.SetActivity" >
+        </activity>
+        <activity android:name="com.xiri.appactivity.MagzineActivity" >
+        </activity>
+        <activity android:name="com.xiri.appactivity.AppStoreActivity" >
+        </activity>
+         <activity android:name="com.xiri.appactivity.PassbookActivity" >
+        </activity>
+         <activity android:name="com.xiri.appactivity.HealthActivity" >
+        </activity>
+         <activity android:name="com.xiri.appactivity.ShortCutActivity" >
+        </activity>
+                 <activity android:name="com.xiri.appactivity.IbookActivity" >
+        </activity>
+        <activity android:name="com.xiri.appactivity.ItunesStoreActivity" >
+        </activity>
+           <activity android:name="com.xiri.appactivity.CallActivity" >
+        </activity>
+           <activity android:name="com.xiri.appactivity.MailActivity" >
+        </activity>
+        <activity android:name="com.xiri.appactivity.MusicActivity" >
+        </activity>
+        <activity android:name="com.xiri.appactivity.SafariActivity" >
+        </activity>
+        <activity android:name="com.xiri.nextactivity.NoteNew" >
+        </activity>
+        <activity android:name="com.xiri.nextactivity.SetNextActivity" >
+        </activity>
+          <activity android:name="com.xiri.nextactivity.SetInformActivity" >
+        </activity>
+         <activity android:name="com.xiri.nextactivity.SetGeneralActivity" >
+        </activity>
+        <activity android:name="com.xiri.nextactivity.AppStoreNextActivity" >
+        </activity>
+        <activity 
+android:name="com.wandoujia.ads.sdk.activities.AppDetailActivity" 
+/> 
+<activity
+android:name="com.wandoujia.ads.sdk.activities.AppWallActivity" 
+/> 
+<activity
+android:name="com.wandoujia.ads.sdk.activities.InterstitialActivity" 
+android:theme="@android:style/Theme.Translucent.NoTitleBar"/> 
+<service 
+android:name="com.wandoujia.ads.sdk.download.AppDownloadService" 
+android:process=":app_download"/>
+    </application>
+
+
+
+</manifest>

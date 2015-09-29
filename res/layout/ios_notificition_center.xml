@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/notificationbackground">
+    
+     <include layout="@layout/ios_status_bar"/>
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/segmentedcontrol"
+        android:scaleType="fitXY"
+        android:padding="5dp"
+        android:id="@+id/segmentcontrol"
+       
+        />
+   <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scrollbars="none"
+       android:layout_weight="1"
+       >
+       <include layout="@layout/ios_nofication_content"/>
+   </ScrollView>
+       <ImageView 
+                   android:layout_marginTop="10dp"
+           
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swipedownindicator2"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/swipedown2"
+     
+        />
+    
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+     android:background="@drawable/wallpaper"
+     android:id="@+id/main_ll"
+     
+    tools:context="com.xiri.iphonehelper.MainActivity" >
+    <include layout="@layout/ios_status_bar"
+      />
+    
+    <android.support.v4.view.ViewPager 
+        
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+       android:layout_weight="1"
+       android:id="@+id/viewpager"
+       
+        />
+    <RelativeLayout 
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        
+        >
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+android:layout_centerHorizontal="true"   
+android:orientation="horizontal"
+android:id="@+id/ll_pick"
+         >
+          <ImageView 
+            android:id="@+id/app_serach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:src="@drawable/search"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            />
+        <ImageView 
+            android:id="@+id/pageindicator1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:src="@drawable/pageindicator_active"
+            android:layout_marginRight="8dp"
+            
+            />
+           <ImageView 
+            android:id="@+id/pageindicator2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:src="@drawable/pageindicator_notactive"
+            
+            />
+        
+        
+        
+        
+    </LinearLayout>
+    
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fl">
+    <include layout="@layout/ios_bottomapp" 
+         /> 
+    <View 
+        android:layout_gravity="bottom"
+       android:layout_width="match_parent"
+       android:layout_height="30dp" 
+       android:id="@+id/up_view"
+        
+        />
+    
+    </FrameLayout> 
+    
+    
+
+</LinearLayout>

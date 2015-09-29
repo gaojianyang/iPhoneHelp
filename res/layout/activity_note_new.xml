@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/note_1"
+     >
+        <include 
+    layout="@layout/ios_status_bar_black"
+  
+    /> 
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        >
+        <ImageView 
+            android:id="@+id/notenew_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_orange"
+            android:layout_marginTop="@dimen/map_padding_bottom"
+            android:layout_marginLeft="@dimen/map_padding_bottom"
+            android:layout_alignParentLeft="true"/>
+
+               <ImageView
+                   android:id="@+id/notenew_done"
+                               android:layout_marginRight="@dimen/map_padding_bottom"
+                   
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentRight="true"
+                   android:layout_alignTop="@+id/notenew_back"
+                   android:src="@drawable/done_orange" />
+
+    </RelativeLayout>
+
+
+<com.larphoid.overscrollinglistview.OverScrollView
+    android:id="@+id/overScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+               <TextView 
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="2015年9月6日 下午10:38"    
+android:gravity="center"  
+android:textSize="@dimen/camera_size_left" 
+android:textColor="#929292" />
+</com.larphoid.overscrollinglistview.OverScrollView>
+
+</LinearLayout>

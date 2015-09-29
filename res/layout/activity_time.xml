@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xiri.appactivity.TimeActivity" >
+<include 
+    layout="@layout/ios_status_bar_black"
+    /> 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/map_padding_bottom"
+        android:paddingTop="@dimen/map_padding_bottom" >
+
+        <ImageView
+            android:id="@+id/time_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/calendar_padding_bottom"
+            android:src="@drawable/add_red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="世界时钟"
+            android:id="@+id/time_title"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_month" />
+
+        <TextView
+            android:id="@+id/time_edit_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/calendar_padding_bottom"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="#ff3b30"
+            android:textSize="@dimen/text_size_rightbar" />
+    </RelativeLayout>
+
+   <ImageView android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:scaleType="fitXY"
+     android:src="@drawable/separator"/> 
+   
+
+    <com.larphoid.overscrollinglistview.OverScrollView
+        android:id="@+id/overScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:background="#f7eff7">
+        <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:id="@+id/time_centerview"
+        android:src="@drawable/time1"
+        />
+    </com.larphoid.overscrollinglistview.OverScrollView>
+    
+ <ImageView android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:scaleType="fitXY"
+     android:src="@drawable/separator"/> 
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/tv_iv_margin"
+        android:paddingTop="@dimen/map_padding_bottom" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_time_bottom_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/world_clock_pressed" />
+
+            <TextView
+                android:id="@+id/tv_time_bottom_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_iv_margin"
+                android:gravity="center"
+                android:text="世界时钟"
+                android:textColor="#FF3B30"
+                android:textSize="@dimen/text_size_day_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_time_bottom_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/alarm_unpressd" />
+
+            <TextView
+                android:id="@+id/tv_time_bottom_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_iv_margin"
+                android:gravity="center"
+                android:text="闹钟"
+                android:textColor="#979797"
+                android:textSize="@dimen/text_size_day_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_time_bottom_stopwatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/stopwatch_unpressd" />
+
+            <TextView
+                android:id="@+id/tv_time_bottom_stopwatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_iv_margin"
+                android:gravity="center"
+                android:text="秒表"
+                android:textColor="#979797"
+                android:textSize="@dimen/text_size_day_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_time_bottom_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/timer_unpressd" />
+
+            <TextView
+                android:id="@+id/tv_time_bottom_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_iv_margin"
+                android:gravity="center"
+                android:text="计时器"
+                android:textColor="#979797"
+                android:textSize="@dimen/text_size_day_name" />
+        </LinearLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:background="@drawable/note_1"
+    tools:context="com.xiri.appactivity.NoteActivity" >
+   <include 
+    layout="@layout/ios_status_bar_black"
+  android:id="@+id/staus_bar"
+    /> 
+    <TextView
+        android:id="@+id/noto_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新建" 
+        android:textSize="@dimen/text_size_rightbar"
+        android:textColor="#e4b631"
+        android:layout_below="@+id/staus_bar"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/map_padding_bottom"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="无备忘录" 
+        android:textSize="@dimen/text_size_big"
+        android:textColor="#8d8e8f"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/activity_vertical_margin"/>
+
+</RelativeLayout>

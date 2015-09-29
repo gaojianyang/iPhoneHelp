@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <include 
+    layout="@layout/ios_status_bar_black"
+    /> 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     >
+
+        <ImageView
+            android:id="@+id/set_next_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/map_padding_bottom"
+            android:src="@drawable/set_back" />
+
+        <TextView
+            android:id="@+id/set_next_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/map_padding_bottom"
+            android:paddingTop="@dimen/map_padding_bottom"
+            android:text="通知"
+            android:textSize="@dimen/text_size_month" />
+
+        <TextView
+            android:id="@+id/setinform_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/calendar_padding_bottom"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="#0379fc"
+            android:textSize="@dimen/text_size_month" />
+    </RelativeLayout>
+
+    <com.larphoid.overscrollinglistview.OverScrollView
+        android:id="@+id/overScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efeff4" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/calendar_padding_bottom"
+                android:layout_marginLeft="@dimen/calendar_padding_bottom"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:text="从屏幕顶部向下轻扫来显示“通知中心”。"
+                android:textColor="#6d6c72" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/tv_iv_margin"
+                android:layout_marginLeft="@dimen/calendar_padding_bottom"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:text="通知视图:"
+                android:textColor="#6d6c72" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:id="@+id/setinform_hand"
+                    
+                    android:background="@drawable/linear_selector"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/calendar_padding_bottom"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/calendar_padding_bottom"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="手动排序"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_rightbar" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:id="@+id/setinform_handselected"
+                        android:src="@drawable/selected_blue" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/separator" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linear_selector"
+                    android:id="@+id/setinform_time"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/calendar_padding_bottom"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/calendar_padding_bottom"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:text="按时间排序"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_rightbar" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                         android:id="@+id/setinform_timeselected"
+                        android:src="@drawable/selected_blue" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/separator" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/tv_iv_margin"
+                android:layout_marginLeft="@dimen/calendar_padding_bottom"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:text="包括:"
+                android:textColor="#6d6c72" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/set_wechat_re"
+                android:background="@drawable/linear_selector"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/calendar_padding_bottom"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="@dimen/calendar_padding_bottom"
+                    android:src="@drawable/set_wechat" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/calendar_padding_bottom"
+                    android:layout_marginTop="@dimen/calendar_padding_bottom"
+                    android:layout_toRightOf="@+id/iv_weixin"
+                    android:src="@drawable/set_wechat_text" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/arrow36" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/tv_iv_margin"
+                android:layout_marginLeft="@dimen/calendar_padding_bottom"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:text="不包括:"
+                android:textColor="#6d6c72" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linear_selector"
+                android:id="@+id/set_weibo_re"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_weibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/calendar_padding_bottom"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/map_padding_bottom"
+                    android:layout_marginTop="@dimen/calendar_padding_bottom"
+                    android:src="@drawable/set_weibo" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/calendar_padding_bottom"
+                    android:layout_marginTop="@dimen/calendar_padding_bottom"
+                    android:layout_toRightOf="@+id/iv_weibo"
+                    android:src="@drawable/set_weibo_text" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/arrow36" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/separator" />
+        </LinearLayout>
+    </com.larphoid.overscrollinglistview.OverScrollView>
+
+</LinearLayout>

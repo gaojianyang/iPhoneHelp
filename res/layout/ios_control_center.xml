@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:background="@drawable/controlbackground"
+     android:id="@+id/main_linear"
+   >
+   <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:scrollbars="none"
+       >
+       <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+   >
+     <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swipedownindicator"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:id="@+id/swipedwon"
+       />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        
+        >
+          <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/aeroplanemodebutton"
+        android:id="@+id/airplane"
+        android:layout_weight="1"/>
+             <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wifibuttonon"
+                android:id="@+id/wifi"
+        
+        android:layout_weight="1"/>
+                <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bluetoothbutton"
+                android:id="@+id/bluetooth"
+        
+        android:layout_weight="1"/>
+                   <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/donotdisturbbutton"
+                android:id="@+id/disturb"
+        
+        android:layout_weight="1"/>
+                      <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lockrotationbutton"
+                android:id="@+id/lock"
+        
+        android:layout_weight="1"/>
+        
+    </LinearLayout>
+       <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/brightness"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:id="@+id/brightness"
+       />
+        <ImageView 
+            android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/musiccontrols"
+        android:layout_gravity="center"
+        android:id="@+id/musiccontrols"
+       />
+          <ImageView 
+            android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/airdrop"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+android:id="@+id/airdrop"
+       />
+       
+<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        
+        >
+          <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/flashlightbutton"
+        android:id="@+id/light"
+        android:layout_weight="1"/>
+             <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/timerbutton"
+        android:layout_weight="1"
+        android:id="@+id/timer"/>
+                <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/calculatorbutton"
+        android:layout_weight="1"
+        android:id="@+id/calculator"/>
+                   <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/camerabutton"
+        android:layout_weight="1"
+        android:id="@+id/camera"/>
+            
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+   
+</LinearLayout>
